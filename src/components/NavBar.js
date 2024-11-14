@@ -54,3 +54,4 @@ function NavBar({ nombreProduits }) {  // La prop 'nombreProduits' est reçue po
 }
 
 export default NavBar;  // Exportation du composant NavBar pour l'utiliser ailleurs
+

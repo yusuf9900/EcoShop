@@ -22,3 +22,4 @@ const MapComponent = () => {
 };
 
 export default MapComponent;  // Exportation du composant MapComponent pour l'utiliser ailleurs
+

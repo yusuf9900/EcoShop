@@ -58,3 +58,4 @@ const Home = ({ ajouterAuPanier }) => {  // La prop 'ajouterAuPanier' permet d'a
 };
 
 export default Home;
+

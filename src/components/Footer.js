@@ -58,3 +58,4 @@ const Footer = () => {
 }
 
 export default Footer;  // Exportation du composant Footer pour l'utiliser ailleurs
+

@@ -47,3 +47,4 @@ function NavBar({ nombreProduits }) {  // Prop 'nombreProduits' passée pour aff
 }
 
 export default NavBar;  // Exportation du composant NavBar pour pouvoir l'utiliser ailleurs
+
