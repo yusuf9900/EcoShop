@@ -1,0 +1,510 @@
+{
+  "categories": [
+    {
+      "name": "Maison & Jardin",
+      "products": [
+        {
+          "id": 1,
+          "name": "Seau à compost d'intérieur avec filtre à charbon 7L",
+          "price": 39.90,
+          "description": "Seau à compost d'intérieur métal et bambou, un bac à compost design et pratique, idéal pour stocker puis transporter vos épluchures jusqu'au compost. Léger et résistant, ce seau est simple à manipuler et à entretenir.",
+          "color": "Ardoise",
+          "capacity": "7L",
+          "image": "/assets/images/produits/a1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Lot de 3 charbons de bois Binchotan filtre à eau 100% naturel",
+          "price": 19.86,
+          "description": "Lot de 3 bâtons de charbon de bois blanc Binchotan. Fabriqué au Japon selon une méthode traditionnelle ancestrale. Améliore le goût de l'eau du robinet. Filtre 100% naturel.",
+          "dimensions": "+/-2cm de diamètre et +/-10cm de longueur",
+          "image": "/assets/images/produits/a2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Matelas Egio 90x190 cm | Latex & Mousse Haute Densité",
+          "price": 139.99,
+          "description": "Parfait pour les enfants ou comme matelas d'appoint pour adultes, le matelas en latex Egio offre une excellente sensation de couchage.",
+          "image": "/assets/images/produits/a3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Banc avec dossier et accoudoir PHILADELPHIA",
+          "price": 179.00,
+          "description": "Un banc de jardin est une halte propice au repos et agrémente votre jardin d'une touche romantique.",
+          "image": "/assets/images/produits/a4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Cuillère doseuse 1g | Thés et poudre",
+          "price": 4.99,
+          "description": "Cuillère doseuse 1g | Mesurez votre ingrédients en poudre | Acier inoxydable, adapté au lave-vaisselle.",
+          "image": "/assets/images/produits/a5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Kit Eco Net Bambou Couleur pour la maison",
+          "price": 46.99,
+          "description": "Le Kit Eco Net Bambou couleur des Tendances d'Emma contient 15 lingettes multi-usage lavables pour effectuer les taches ménagères du quotidien. Pratiques, écologiques et économiques, elles remplacent les lingettes jetables et l'essuie-tout.",
+          "image": "/assets/images/produits/a6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Beauté & Soins Personnels",
+      "products": [
+        {
+          "id": 1,
+          "name": "Shampoing anti-poux et lentes Balépou 200ml",
+          "price": 9.90,
+          "description": "Shampoing anti-poux et lentes Balépou, un formule naturelle qui lutte efficacement contre les poux et les lentes en 15 minutes. Dès 3 mois.",
+          "volume": "200ml",
+          "image": "/assets/images/produits/b1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Savon solide saponifié à froid neutre COSMOS ORGANIC 100g",
+          "price": 3.95,
+          "description": "Savon solide Greenweez pour corps et visage neutre. Un produit 100% d'origine naturelle, sans huile essentielle, adapté à tout type de peau. Emballage papier minimaliste pour un résultat zéro déchet.",
+          "certification": "Cosmos Organic",
+          "weight": "100g",
+          "image": "/assets/images/produits/b2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Recharge déodorant coton et macadamia 100ml",
+          "price": 4.06,
+          "description": "Recharge déodorant coton et macadamia, une formule douce et naturelle qui assure une protection pendant 24h contre les mauvaises odeurs de transpiration. Parfum réconfortant.",
+          "volume": "100ml",
+          "image": "/assets/images/produits/b3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Soins mains Silicium et Manuka 50ml",
+          "price": 8.24,
+          "description": "Soins mains Silicium et Manuka, un soin naturel qui répare, nourrit et protège la peau de vos mains.",
+          "volume": "50ml",
+          "image": "/assets/images/produits/b4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Crème ayurvédique réparatrice mains et pieds. Sésame. Vegan 50g",
+          "price": 19.90,
+          "description": "Pour les pieds et les mains sèches, rien de tel que cette crème réparatrice aux beurres, huiles essentielles et thé vert. 80,90% naturel et 95,68% d'origine naturelle au total.",
+          "weight": "50g",
+          "image": "/assets/images/produits/b5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Crème corps ayurvédique naturelle antioxydante au Chocolat. 100g",
+          "price": 23.60,
+          "description": "Crème de corps ayurvédique au chocolat, reconstituante et antioxydante. A partir de 14 ans. 99,63 % d'origine naturelle au total.",
+          "weight": "100g",
+          "image": "/assets/images/produits/b6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Bébé & Enfant",
+      "products": [
+        {
+          "id": 1,
+          "name": "Couches écologiques T1 New Born 2-5kg anti-fuites x22",
+          "price": 4.98,
+          "description": "Couches écologiques anti-fuites T1 New Born 2-5kg, composées d'un voile de surface 100% d'origine naturelle et des fibres de cellulose provenant de forêts gérées durablement. Sans chlore, sans parfum, sans lotion, sans latex naturel. Ultra absorbantes, elles gardent bébé au sec pendant 12 heures.",
+          "quantity": "Paquet de 22 couches",
+          "image": "/assets/images/produits/c1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Brosse à dents en bioplastique pour enfant rose",
+          "price": 1.92,
+          "description": "Brosse à dent enfant medium souple verte Biobrush en bioplastique 94% biodégradable.",
+          "image": "/assets/images/produits/c2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Mon lecteur de livres bookinou dès 2 ans",
+          "price": 55.99,
+          "description": "Bookinou, son premier lecteur de livres magique dès 2 ans ! Permet d'écouter des livres avec la voix de toute la famille, soutenu par l'Éducation Nationale.",
+          "image": "/assets/images/produits/c3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Bonjour, au revoir - Pédagogie Montessori - dès la naissance",
+          "price": 6.50,
+          "description": "Livre pédagogique Montessori pour apprendre et faire comprendre aux petits les règles de la vie sociale et le respect d'autrui. Dès la naissance.",
+          "image": "/assets/images/produits/c4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Le mémory Montessori des lettres de Balthazar - dès 4 ans",
+          "price": 11.50,
+          "description": "Jeu de mémory Montessori des lettres pour stimuler la mémoire et la concentration chez l'enfant. Dès l'âge de 4 ans.",
+          "image": "/assets/images/produits/c5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Mes Premières Céréales dès 4-6 mois 250g",
+          "price": 15.29,
+          "description": "Préparation pour biberon ou à l'assiette pour les bébés dès 4-6 mois.",
+          "weight": "250g",
+          "image": "/assets/images/produits/c6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Cuisine & Accessoires",
+      "products": [
+        {
+          "id": 1,
+          "name": "Lot de 3 ustensiles de cuisine en bois dont 2 spatules et une cuillère",
+          "price": 15.29,
+          "description": "Lot de 3 ustensiles de cuisine en bois composé d'une cuillère en bois, d'une spatule et d'une seconde spatule.",
+          "image": "/assets/images/produits/d1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Pince à bocaux en verre Dr Oetker Confiture",
+          "price": 14.93,
+          "description": "Pince à bocaux permettant de déposer et d'extraire les bocaux de l'eau bouillante facilement et sans risque.",
+          "image": "/assets/images/produits/d2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Pince à barbecue inox 46 cm FM",
+          "price": 14.93,
+          "description": "Pince pour barbecue en inox de 46 cm, idéale pour retourner viandes, brochettes, et légumes.",
+          "image": "/assets/images/produits/d3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Coffret complet Le Petit Chef",
+          "price": 34.90,
+          "description": "Coffret pour enfant pour l'apprentissage de la cuisine en toute sécurité, contient un couteau, un éplucheur, et un protège-doigts. Fabriqué en France.",
+          "material": "Lames en acier inox, manches en bois de hêtre",
+          "image": "/assets/images/produits/d4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Tapis de cuisson en fibre de verre siliconée AIRMAT 40 x 30cm",
+          "price": 15.95,
+          "description": "Tapis de cuisson épais en toile de fibre de verre avec revêtement en silicone, idéal pour cuisson et remplacement du papier cuisson jetable.",
+          "dimensions": "40 x 30 cm",
+          "image": "/assets/images/produits/d5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Set de 2 verres mesureurs 1L et 500ml",
+          "price": 12.90,
+          "description": "Set de verres mesureurs en verre borosilicate, contenant un verre de 1L et un autre de 500ml.",
+          "image": "/assets/images/produits/d6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Mode & Accessoires",
+      "products": [
+        {
+          "id": 1,
+          "name": "Cabas Cesar",
+          "price": 58.00,
+          "description": "César, le cabas compact et élégant du quotidien, idéal pour transporter un ordinateur. Doublure intérieure élégante, fermeture éclair et poche intérieure.",
+          "features": ["bandoulière", "épaule", "bras"],
+          "image": "/assets/images/produits/e1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Boxers - Coton Bio lot de 6",
+          "price": 76.95,
+          "description": "Boxers en coton bio, avec élastique confortable et logo discret. Douceur et élasticité pour un confort optimal au quotidien.",
+          "image": "/assets/images/produits/e2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Pantalon point de bourdon - La Flâneuse - Noir",
+          "price": 39.00,
+          "description": "Pantalon ultra confortable en coton bio avec finitions en point de bourdon. Parfait pour le cocooning ou en pyjama. Fabriqué en France.",
+          "image": "/assets/images/produits/e3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Mala en Aventurine Pêche 108 perles",
+          "price": 29.90,
+          "description": "Mala à porter en bijou ou pour réciter des mantras, composé de 108 perles en Aventurine Pêche.",
+          "image": "/assets/images/produits/e4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Chalk - Bottes en cuir vegan blanc",
+          "price": 111.00,
+          "description": "Bottes en cuir vegan blanc avec talon épais carré et fermeture éclair latérale. Bout carré pour un style moderne.",
+          "image": "/assets/images/produits/e5.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Jor Re-PET White chaussure de sport végane",
+          "price": 89.10,
+          "description": "Chaussures de sport végane en PET recyclé, parfaites pour la course et les activités extérieures. Disponibles en noir et blanc, avec semelles en EVA et lacets en polyester.",
+          "image": "/assets/images/produits/e6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Santé & Bien-être",
+      "products": [
+        {
+          "id": 1,
+          "name": "Collagène marin 100 gélules",
+          "price": 7.94,
+          "description": "Complément alimentaire à base de collagène marin pour préserver la mobilité et le confort articulaire.",
+          "packaging": "Pilulier recyclable de 100 gélules",
+          "image": "/assets/images/produits/f1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Pack Enfant Automne/Hiver - Nez & Gorge - Immunité & Transit",
+          "price": 52.00,
+          "description": "Pack pour renforcer l'organisme des enfants durant les saisons froides, boostant l'immunité et favorisant le transit.",
+          "image": "/assets/images/produits/f2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Gommes Immunité - 3 piluliers de 60 oursons - Goût framboise",
+          "price": 32.85,
+          "description": "Pediakid Gommes Immunité : oursons au goût framboise pour renforcer les défenses naturelles des enfants.",
+          "image": "/assets/images/produits/f3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Téguments de Psyllium Bio 200g",
+          "price": 5.94,
+          "description": "Complément alimentaire naturel certifié bio, idéal pour une digestion saine.",
+          "weight": "200g",
+          "image": "/assets/images/produits/f4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Vitamine C liposomale 60 gélules",
+          "price": 8.89,
+          "description": "Vitamine C liposomale pour réduire la fatigue et favoriser le fonctionnement normal de l'organisme.",
+          "packaging": "Pilulier recyclable de 60 gélules",
+          "image": "/assets/images/produits/f5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Calcium C+ et vitamine D - Os et dents - 14 sticks - Goût cola",
+          "price": 10.90,
+          "description": "Complément pour assurer la solidité des os et dents des enfants, avec calcium et vitamine D pour une meilleure assimilation.",
+          "image": "/assets/images/produits/f6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Technologie & Électronique Écoresponsable",
+      "products": [
+        {
+          "id": 1,
+          "name": "MOULINEX HM653910 Powermix Silence Batteur, 600 W",
+          "price": 62.90,
+          "description": "Batteur ultra-silencieux et puissant avec flux d'air optimisé et technologie d'insonorisation. Moteur robuste de 600 W.",
+          "image": "/assets/images/produits/g1.webp"
+        },
+        {
+          "id": 2,
+          "name": "RUSSELL HOBBS 23221-56 - Toaster Luna - Technologie Fast Toast",
+          "price": 79.98,
+          "description": "Toaster en acier premium avec brunissage rapide et technologie Lift'n Look pour ajuster le brunissage sans interrompre le cycle.",
+          "image": "/assets/images/produits/g2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Bob le mini lave-vaisselle PREMIUM PACK | Édition Bleu Maya",
+          "price": 617.90,
+          "description": "Mini lave-vaisselle éco-compact pour 2-3 personnes avec technologie UV pour un nettoyage écologique.",
+          "image": "/assets/images/produits/g3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Balance cuisine électronique 15 KG",
+          "price": 27.90,
+          "description": "Balance de cuisine électronique avec tare pour peser jusqu'à 15 kg avec précision.",
+          "image": "/assets/images/produits/g4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Mélangeur électronique JATA Tritan BT1056",
+          "price": 218.66,
+          "description": "Mélangeur avec nouvelle technologie de pression continue, idéal pour préparer une variété d'aliments.",
+          "image": "/assets/images/produits/g5.webp"
+        },
+        {
+          "id": 6,
+          "name": "BALANCE ÉLECTRONIQUE EN BAMBOU",
+          "price": 25.49,
+          "description": "Balance électronique écologique avec plateau en bambou brut pour une précision au gramme près dans la cuisine ou la cosmétique.",
+          "image": "/assets/images/produits/g6.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Alimentation Bio & Végane",
+      "products": [
+        {
+          "id": 1,
+          "name": "Erythritol Bio alternative au sucre 500g",
+          "price": 5.94,
+          "description": "Erythritol bio Greenweez, édulcorant naturel aux multiples atouts qui peut remplacer le sucre.",
+          "weight": "500g",
+          "image": "/assets/images/produits/h1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Baies de Goji Bio 500g Himalaya",
+          "price": 16.99,
+          "description": "Baies de Goji Bio de l'Himalaya. Encas sains, nutritives, moelleuses. Sachet kraft refermable de 500g.",
+          "weight": "500g",
+          "image": "/assets/images/produits/h2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Purée de cacahuètes bio 350g",
+          "price": 3.99,
+          "description": "Purée de cacahuètes Greenweez issue de l'agriculture biologique.",
+          "weight": "350g",
+          "image": "/assets/images/produits/h3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Pâte à tartiner noisettes et cacao Bio 600g",
+          "price": 5.94,
+          "description": "Pâte à tartiner au chocolat au lait et aux noisettes, sans huile de palme, 16% de noisettes. Ingrédients issus de l'agriculture biologique.",
+          "weight": "600g",
+          "image": "/assets/images/produits/h4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Flocons d'avoine épais bio sans gluten 1kg",
+          "price": 4.39,
+          "description": "Flocons d'avoine épais Greenweez, sans gluten, issus de l'agriculture biologique.",
+          "weight": "1kg",
+          "image": "/assets/images/produits/h5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Mayo' Vegan 130g",
+          "price": 4.37,
+          "description": "Mayo' Vegan élaborée avec de la farine de riz. Sans œufs et sans gluten.",
+          "weight": "130g",
+          "image": "/assets/images/produits/h6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Sport & Loisirs",
+      "products": [
+        {
+          "id": 1,
+          "name": "Protéines 25 - Mix Vegan protéiné 230g",
+          "price": 15.94,
+          "description": "Mix Vegan protéiné, riche en protéines complètes. À diluer ou à saupoudrer.",
+          "weight": "230g",
+          "image": "/assets/images/produits/i1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Ceinture de running Sammie City coloris noir",
+          "price": 40.00,
+          "description": "La ceinture Sammie City est idéale pour vos sorties running, pour emporter clés, téléphone, flasque sans être gêné.",
+          "image": "/assets/images/produits/i2.webp"
+        },
+        {
+          "id": 3,
+          "name": "Ballon de football écoresponsable bleu",
+          "price": 50.00,
+          "description": "Ballon écoresponsable taille 5 fabriqué à la main par des personnes en insertion. Matériaux upcyclés.",
+          "color": "Bleu",
+          "image": "/assets/images/produits/i3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Ballon de Rugby en Cuir Vintage - Chocolat",
+          "price": 89.00,
+          "description": "Ballon de rugby en cuir vintage, entièrement cousu à la main, en cuir de vachette.",
+          "color": "Chocolat",
+          "image": "/assets/images/produits/i4.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Ballon de Volley-Ball en Cuir Vintage - Chocolat",
+          "price": 89.00,
+          "description": "Ballon de volley-ball 100% cuir, composé de 12 pièces de cuir cousues à la main. Haute qualité.",
+          "color": "Chocolat",
+          "diameter": "21 cm",
+          "image": "/assets/images/produits/i5.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Ballon de football écoresponsable Tornade",
+          "price": 50.00,
+          "description": "Ballon écoresponsable taille 5 fabriqué à la main par des personnes en insertion. Matériaux upcyclés.",
+          "model": "Tornade",
+          "image": "/assets/images/produits/i6.webp"
+        }
+      ]
+    },
+    {
+      "name": "Papeterie & Bureau Écologique",
+      "products": [
+        {
+          "id": 1,
+          "name": "Feuilles mobiles perforées A4 - Grands carreaux - 300 pages",
+          "price": 26.57,
+          "description": "Feuilles mobiles 21 x 29,7 cm Grands carreaux. Idéales pour rédiger vos leçons et indispensables pour les contrôles.",
+          "pages": "300",
+          "image": "/assets/images/produits/k1.webp"
+        },
+        {
+          "id": 2,
+          "name": "Ramette 500 Feuilles Papier 80g/m² A4 PEFC 50% Recyclé Blanc",
+          "price": 29.65,
+          "description": "Ramette de 500 feuilles de papier A4, 80g/m², Certifié PEFC 50% Recyclé, Blanc. Fabrication française.",
+          "weight": "500 feuilles",
+          "image": "/assets/images/produits/k2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Carnet Kraft à spirales - 80 Pages",
+          "price": 12.90,
+          "description": "Carnet de notes 19 x 26,5 cm avec une couverture en kraft à personnaliser.",
+          "pages": "80",
+          "image": "/assets/images/produits/k3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Bureau pivotant Gibril CAMIF",
+          "price": 319.00,
+          "description": "Le bureau pivotant Gibril, astucieux et polyvalent. Se transforme en buffet lorsqu'il est fermé.",
+          "type": "Pivotant",
+          "image": "/assets/images/produits/k4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Bureau modulable Gemma",
+          "price": 259.00,
+          "description": "Bureau modulable Gemma, conçu pour s'adapter à tous vos besoins et espaces. Choisissez entre plusieurs versions de montage.",
+          "type": "Modulable",
+          "image": "/assets/images/produits/k5.webp"
+        },
+        {
+          "id": 6,
+          "name": "Bureau Secrétaire en merisier massif",
+          "price": 590.00,
+          "description": "Bureau secrétaire en merisier massif, collection MELANIE, aux lignes droites intemporelles.",
+          "material": "Merisier massif",
+          "image": "/assets/images/produits/k6.webp"
+        }
+      ]
+    }
+  ]
+}
