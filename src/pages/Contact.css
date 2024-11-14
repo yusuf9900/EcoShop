@@ -1,0 +1,109 @@
+/* Définir les styles de base pour la page de contact */
+.contact-page {
+    font-family: Arial, sans-serif; /* Police utilisée pour le texte */
+    position: relative; /* Positionnement relatif pour ajuster la page par rapport à son conteneur parent */
+    top: 80px; /* Décale le contenu de la page vers le bas pour éviter les superpositions avec d'autres éléments */
+}
+
+/* Style pour le footer de la page de contact */
+.footer2 {
+    margin-top: 20px; /* Espacement au-dessus du footer */
+    background-color: black; /* Fond noir pour le footer */
+    color: white; /* Texte blanc dans le footer */
+}
+
+/* Style du titre principal (h2) sur la page de contact */
+.contact-page h2 {
+    text-align: center; /* Centrer le texte */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    padding: 15px 40px; /* Espacement intérieur autour du texte */
+    margin-left: 250px; /* Marge à gauche pour centrer le titre */
+    margin-right: 250px; /* Marge à droite pour centrer le titre */
+    border-radius: 30px; /* Bordures arrondies pour donner un effet de douceur */
+    border: solid 2px #4CAF50; /* Bordure verte */
+}
+
+/* Style du formulaire de contact */
+.contact-page form {
+    max-width: 600px; /* Limiter la largeur maximale du formulaire */
+    margin: auto; /* Centrer le formulaire horizontalement */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    padding: 20px; /* Espacement intérieur autour des champs du formulaire */
+    background-color: #f9f9f9; /* Fond gris clair pour le formulaire */
+    border-radius: 5px; /* Bordures légèrement arrondies */
+}
+
+/* Style des labels dans le formulaire */
+.contact-page label {
+    display: block; /* Afficher chaque label sur une nouvelle ligne */
+    margin: 0px 0px; /* Pas de marge autour des labels */
+}
+
+/* Style des champs de saisie (input) dans le formulaire */
+.contact-page input {
+    width: 100%; /* Les champs de saisie occupent toute la largeur disponible */
+    padding: 10px; /* Espacement intérieur pour rendre les champs plus agréables à utiliser */
+    margin-bottom: 15px; /* Espacement sous chaque champ de saisie */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 5px; /* Bordures arrondies pour les champs de saisie */
+}
+
+/* Style de la zone de texte (textarea) */
+.contact-page textarea {
+    width: 100%; /* La zone de texte occupe toute la largeur disponible */
+    padding: 10px; /* Espacement intérieur pour améliorer l'expérience utilisateur */
+    margin-bottom: 15px; /* Espacement sous la zone de texte */
+    height: 130px; /* Hauteur fixe pour la zone de texte */
+    border: 1px solid #ccc; /* Bordure grise claire */
+    border-radius: 5px; /* Bordures arrondies pour la zone de texte */
+}
+
+/* Style du bouton de soumission */
+.contact-page button {
+    display: block; /* Le bouton s'affiche sur une nouvelle ligne */
+    width: 100%; /* Le bouton occupe toute la largeur du formulaire */
+    padding: 10px; /* Espacement intérieur pour rendre le bouton plus cliquable */
+    background-color: #4caf50; /* Couleur de fond verte pour le bouton */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure autour du bouton */
+    border-radius: 5px; /* Bordures arrondies pour le bouton */
+    cursor: pointer; /* Curseur en forme de main pour signaler l'interactivité */
+}
+
+/* Effet au survol du bouton */
+.contact-page button:hover {
+    background-color: #45a049; /* Change la couleur de fond en un vert plus foncé lors du survol */
+}
+
+/* Style du message d'erreur (texte rouge) */
+.error {
+    color: red; /* Texte rouge pour signaler une erreur */
+    font-size: 0.9em; /* Taille de police légèrement réduite */
+}
+
+/* Style spécifique pour la carte (map) */
+.map {
+    margin-top: 10px; /* Espacement au-dessus de la carte */
+}
+
+/* Media queries pour les écrans de petite taille (tablettes et téléphones) */
+@media (max-width: 768px) {
+    /* Ajustement du titre sur les petits écrans */
+    .contact-page h2 {
+        position: relative; /* Position relative pour ajuster le placement */
+        padding: 3px 0px; /* Réduire le padding pour un affichage plus compact */
+        margin-left: 100px; /* Réduire la marge gauche */
+        margin-right: 100px; /* Réduire la marge droite */
+        top: 30px; /* Déplacer le titre un peu plus bas */
+    }
+
+    /* Ajustement du formulaire sur les petits écrans */
+    .contact-page form {
+        margin-top: 40px; /* Ajouter de l'espace au-dessus du formulaire */
+    }
+
+    /* Ajustement de la carte (map) sur les petits écrans */
+    .map {
+        margin-top: 40px; /* Ajouter un plus grand espacement au-dessus de la carte */
+    }
+}
