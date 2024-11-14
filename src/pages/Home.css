@@ -1,0 +1,409 @@
+.home {
+    font-family: Arial, sans-serif;
+    background-image: url('/public/assets/images/hero-bg.jpg'); /* Remplacez par le lien de votre image */
+    background-size: cover;
+    height: 603px;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative; /* Nécessaire pour positionner le pseudo-élément par rapport à .home */
+}
+
+.home::before {
+    content: ""; /* Nécessaire pour afficher l'élément */
+    position: absolute; /* Positionner en tant qu'élément absolu */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Ombre sombre avec opacité */
+    z-index: 1; /* S'assurer que l'overlay est derrière le contenu mais devant l'image */
+}
+
+.title-1 {
+    color: #FFFFFF; /* Assurez-vous que le texte est en blanc pur */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Ombre plus marquée pour une meilleure lisibilité */
+    z-index: 2; /* Assure que le contenu passe au-dessus de l'overlay */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.title-1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    position: relative;
+    top: 200px;
+    font-weight: 600;
+}
+
+.para-1 {
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 500;
+    top: 200px;
+    z-index: 2;
+    color:  #4CAF50;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+/* CT button */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0px 10px;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    top: 300px;
+    border: 2px solid #4CAF50;
+  }
+  
+  .cta-button:hover {
+    background-color: #388E3C;
+    border-color: #FFFFFF;
+  }
+  
+  .ctb-button {
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0px 10px;
+    transition: background-color 0.3s, border-color 0.3s; /* Ajouter la transition pour la bordure */
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    top: 300px;
+    border: 2px solid #4CAF50; /* Bordure noire */
+}
+
+.ctb-button:hover {
+    border-color: #2c6e2f; /* Optionnel : changer la couleur de la bordure au survol */
+}
+
+
+.banner {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    padding: 60px 0px;
+    top: 60px;
+}
+
+.footer1{
+    position: relative;
+    top: 200px;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.categories {
+    margin: 20px 0;
+    position: relative;
+    top: 70px;
+}
+
+.popular-products {
+    margin: 20px 0;
+    position: relative;
+    top: 140px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    top: 30px;
+  }
+  
+  .info-item {
+    max-width: 200px;
+  }
+  
+  .info-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .info-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #051922;
+    margin-bottom: 10px;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+    color: #3e2424;
+  }
+
+.footer {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Permet le passage en ligne pour les petits écrans */
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  line-height: 2;
+}
+
+.footer .footer-section {
+  flex: 1 1 23%; /* Chaque section prend environ 23% de la largeur */
+  margin-bottom: 30px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+  right: 65px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  color: #1abc9c;
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #16a085;
+}
+
+.footer .footer-bottom {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  height: 60px;
+  position: relative;
+  top: 40px;
+}
+
+.search-bar {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+}
+
+/*/// Container pour le contenu de l'en-tête ///*/
+.container {
+  position: fixed;
+  z-index: 1000; /* Assure que le contenu passe au-dessus de l'overlay */
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajout de padding pour espacer le contenu */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.container.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); /* Fond sombre lorsque la page est défilée */
+}
+
+/* Logo */
+.logo img {
+  max-width: 50px;
+  position: relative;
+  left: 30px;
+  top: 5px;
+}
+
+/* Navigation principale */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 20px; /* Espacement à gauche des liens de navigation */
+}
+
+.main-nav ul li {
+  margin-right: 30px;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  position: relative;
+  top: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 900;
+  transition: color 0.3s ease;
+  padding: 0px 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Améliore la lisibilité du texte */
+}
+
+.main-nav ul li a:hover {
+  color: #4CAF50; /* Changement de couleur au survol */
+}
+
+/* Style du panier */
+.cart .cart-btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  right: 30px;
+}
+
+.cart-icon {
+  width: 30px;
+  height: auto;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #F28123;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo{
+    position: relative;
+    right: 230px;
+  }
+
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -200px;
+    left: -10px;
+  }
+
+  h1.title-1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    top: 200px;
+    font-weight: 600;
+  }
+
+  pre.para-1 {
+    font-size: 0.75rem;
+    position: relative;
+    font-weight: 500;
+    top: 200px;
+
+    margin-left: -60px;
+    color:  #4CAF50;
+  }
+
+  /*/// Container pour le contenu de l'en-tête ///*/
+  .container {
+    position: fixed;
+    z-index: 1000; /* Assure que le contenu passe au-dessus de l'overlay */
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 10px 20px; /* Ajout de padding pour espacer le contenu */
+    transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    left: 130px;
+  }
+
+  .cart{
+    position: relative;
+    bottom: 200px;
+    right: 170px;
+  }
+
+  .main-nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cart .cart-btn {
+    margin-top: 10px;
+  }
+  /* Ajustement de l'icône du panier */
+  .cart .cart-icon {
+    width: 25px;
+}
+
+.cart .cart-count {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+}
+}
+
+  

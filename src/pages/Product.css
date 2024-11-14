@@ -1,0 +1,288 @@
+.other{
+    position: relative;
+    bottom: 35px;
+}
+.home1 {
+    background-color: #45a049;
+    color: #FFFFFF;
+    height: 400px;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 0px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.cart-countt {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #F28123;
+    color: #000000;
+    font-size: 14px;
+    padding: 4px 7px;
+    border-radius: 50%;
+  }
+
+.titre1 {
+    position: relative;
+    top: 290px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cate{
+    position: relative;
+    bottom: 40px;
+}
+
+/* Style général pour la page produit */
+.product-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    margin-top: 50px;
+}
+
+/* Style pour les catégories de produits */
+.product-page h2 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+/* Mise en page en grille avec 3 colonnes pour les produits */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 40px;
+    padding: 0 10px;
+}
+
+/* Structure de la carte produit avec Flexbox */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Fixe une hauteur pour uniformiser la taille des cartes */
+    padding: 20px;
+    gap: 15px;
+    position: relative; /* Ajoutez cette ligne */
+}
+
+/* Conteneur d'information du produit */
+.product-info {
+    display: flex;
+    flex-direction: column; /* Affichage en colonne */
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    margin-top: 10px;
+    position: absolute; /* Ajoutez cette ligne */
+    top: 50%; /* Centrez verticalement */
+    left: 50%; /* Centrez horizontalement */
+    transform: translate(-50%, -50%); /* Ajustez pour centrer */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond légèrement transparent */
+    padding: 20px; /* Ajoutez du rembourrage */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour le conteneur */
+    visibility: hidden; /* Masquez par défaut */
+    opacity: 0; /* Masquez par défaut */
+    transition: visibility 0s, opacity 0.3s ease; /* Transition pour l'apparition */
+}
+
+/* Affichez la description, le prix et le bouton au survol */
+.product-card:hover .product-info {
+    visibility: visible; /* Montrez quand survolé */
+    opacity: 1; /* Montrez quand survolé */
+}
+
+/* Description du produit */
+.product-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Prix du produit */
+.product-price {
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Bouton d'ajout au panier */
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.categories {
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: 400px; /* Augmenter la hauteur de la section */
+  }
+  .search-barr {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+  }
+  .category-list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 24px; /* Augmenter l'espace entre les catégories */
+    padding: 20px; /* Augmenter le padding */
+    scrollbar-width: none;
+  }
+  
+  /* Masque la barre de défilement pour Chrome, Safari, etc. */
+  .category-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-item {
+    min-width: 160px; /* Augmenter la taille minimale des éléments */
+    padding: 20px; /* Augmenter le padding à l'intérieur de chaque catégorie */
+    margin: 10px; /* Augmenter la marge entre les catégories */
+    text-align: center;
+    background-color: #e0f7fa;
+    border-radius: 12px; /* Augmenter le rayon des coins pour un look plus arrondi */
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    top: 40px; /* Ajuster la position pour un meilleur alignement */
+    transition: transform 0.3s ease; /* Transition plus douce pour l'animation */
+    font-size: 0.9rem; /* Augmenter la taille de la police pour rendre le texte plus visible */
+    font-weight: bold; /* Rendre le texte plus lisible */
+  }
+  
+  .category-item:hover {
+    transform: scale(1.1); /* Augmenter l'effet de survol */
+  }
+  /* Logo */
+.logoo img {
+    max-width: 50px;
+    position: relative;
+    left: 30px;
+    top: 5px;
+  }
+  
+  /* Navigation principale */
+  .main-navi ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px; /* Espacement à gauche des liens de navigation */
+  }
+  
+  .main-navi ul li {
+    margin-right: 30px;
+  }
+  
+  .main-navi ul li a {
+    color: #fff;
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    transition: color 0.3s ease;
+    padding: 0px 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Améliore la lisibilité du texte */
+  }
+  
+  .main-navi ul li a:hover {
+    color: #4CAF50; /* Changement de couleur au survol */
+  }
+  
+  /* Style du panier */
+  .cartt .cart-btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    top: 5px;
+    right: 30px;
+  }
+  
+  .cartt-icon {
+    width: 30px;
+    height: auto;
+  }
+  
+  .cartt-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #F28123;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 7px;
+    border-radius: 50%;
+  }
+
+/* Responsivité : 1 produit par ligne sur les petits écrans */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+    /* Structure de la carte produit avec Flexbox */
+.product-card h3 {
+    position: relative;
+    bottom: 40px;
+}
+  /* Logo */
+  .logoo img {
+    max-width: 50px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+  }
+  
+  .contaner{
+    background-color: black;
+    height: 120px;
+  }
+
+  /* Navigation principale */
+  .main-navi ul {
+    list-style: none;
+    display: flex;
+    margin-left: -30px;
+  }
+  
+  .main-navi ul li {
+    margin-right: -20px;
+  }
+  
+  /* Style du panier */
+  .cartt .cart-btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    top: 5px;
+    right: 240px;
+  }
+  .search-barr {
+    position: relative;
+    top: 50px;
+    right: 280px;
+  }
+}
