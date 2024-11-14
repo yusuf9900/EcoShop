@@ -1,0 +1,12 @@
+/* src/App.css */
+.App {
+    text-align: center;
+}
+.conter{
+    position: relative;
+    bottom: 35px;
+}
+
+@media (max-width: 768px){
+    
+}
