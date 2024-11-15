@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar({ nombreProduits }) {  // Prop 'nombreProduits' passée pour afficher le nombre de produits dans le panier
