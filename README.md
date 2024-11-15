@@ -12,12 +12,12 @@ EcoShop est une application de commerce électronique dédiée aux produits éco
 - Affichage de la liste complète des produits avec image, nom, description et prix.
 - Navigation par catégories pour faciliter la découverte de produits spécifiques.
 
-### 2. Recherche de Produits
-- Barre de recherche dynamique permettant de filtrer les produits par nom.
+### 2. Recherche de Produits par catégorie
+- permettant de filtrer les produits par catégorie.
 
 ### 3. Panier d'Achat
 - Ajout et suppression de produits dans le panier avec ajustement de quantité.
-- Affichage du total du panier avec possibilité de gérer chaque article individuellement.
+- Affichage du total du panier.
 
 ### 4. Responsive Design
 - Interface entièrement responsive, optimisée pour ordinateurs, tablettes et smartphones.
