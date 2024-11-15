@@ -4,7 +4,7 @@
 
 **Lien Portfolio** : https://yusuf9900.github.io/portfolio/
 
-EcoShop est une application de commerce électronique dédiée aux produits écologiques, permettant aux utilisateurs de consulter, rechercher et ajouter des produits écoresponsables à leur panier pour un achat plus durable.
+EcoShop est une application de commerce électronique dédiée aux produits écologiques, permettant aux utilisateurs de consulter et ajouter des produits écoresponsables à leur panier pour un achat plus durable.
 
 ## Fonctionnalités
 
