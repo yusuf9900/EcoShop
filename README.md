@@ -1,16 +1,29 @@
 EcoShop - E-commerce des produits écologiques
-EcoShop est une plateforme d'e-commerce dédiée à la vente de produits écologiques et durables. Ce projet vise à promouvoir la consommation responsable tout en offrant une interface utilisateur moderne et facile à utiliser. Ce document explique comment installer, utiliser et développer l'application.
+
+EcoShop est une plateforme d'e-commerce dédiée à la vente de produits écologiques et durables. 
+Ce projet vise à promouvoir la consommation responsable tout en offrant une interface utilisateur 
+moderne et facile à utiliser. Ce document explique comment installer, utiliser et développer l'application.
 
 Table des matières
+
 Prérequis
+
 Installation
+
 Structure du projet
+
 Utilisation
+
 Fichier JSON des produits
+
 Fonctionnalités principales
+
 Contributions
-License
+
+
+
 Prérequis
+
 Avant d'installer et d'utiliser l'application, vous devez vous assurer que vous avez les outils suivants installés :
 
 Node.js (version 14 ou supérieure) - Télécharger Node.js
@@ -26,6 +39,7 @@ npm -v
 Si elles retournent les versions de ces outils, vous êtes prêt à commencer !
 
 Installation
+
 1. Cloner le dépôt
 Commencez par cloner le projet depuis GitHub. Ouvrez un terminal et exécutez la commande suivante pour récupérer les fichiers du projet :
 
@@ -33,7 +47,9 @@ bash
 Copier le code
 git clone https://github.com/votre-nom-utilisateur/EcoShop.git
 cd EcoShop
+
 2. Installer les dépendances
+
 Dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances nécessaires avec npm :
 
 bash
@@ -42,6 +58,7 @@ npm install
 Cela téléchargera et installera toutes les bibliothèques nécessaires pour faire fonctionner l'application.
 
 3. Démarrer le serveur local
+   
 Une fois l'installation terminée, vous pouvez démarrer l'application localement avec cette commande :
 
 bash
@@ -55,30 +72,50 @@ L'architecture du projet est organisée de manière à faciliter la gestion des 
 php
 Copier le code
 EcoShop/
+
 │
+
 ├── src/
+
 │   ├── assets/              # Images et autres ressources statiques
+
 │   ├── components/          # Composants React (Cart, Product, Header, etc.)
+
 │   ├── services/            # Services JavaScript (gestion des produits, panier)
+
 │   ├── App.js               # Composant principal de l'application
+
 │   ├── index.js             # Point d'entrée de l'application React
+
 │   └── products.json        # Fichier JSON contenant les informations des produits
+
 │
 ├── public/                  # Dossier public (index.html, favicon.ico, etc.)
+
 ├── package.json             # Fichier de configuration de npm
+
 └── README.md                # Ce fichier
+
 Utilisation
+
 Navigation dans l'application
 Page d'accueil : La page d'accueil présente une sélection de produits écologiques disponibles dans la boutique.
 Page des produits : Tous les produits disponibles sont affichés. Vous pouvez ajouter des produits au panier depuis cette page.
 Panier : Vous pouvez consulter les produits que vous avez ajoutés au panier, ainsi que la quantité et le prix total.
 Recherche : Utilisez la barre de recherche pour filtrer les produits selon leur nom ou catégorie.
+
 Fonctionnalités disponibles
+
 Ajout au panier : Vous pouvez ajouter des produits au panier et voir le nombre total d'articles dans le panier.
+
 Filtrage des produits : Utilisez la barre de recherche pour trouver rapidement un produit spécifique par nom.
+
 Détails des produits : Chaque produit affiche son nom, prix, description et une image.
+
 Responsive : L'application est entièrement responsive, et s'adapte aux écrans de différentes tailles (ordinateur, tablette, mobile).
+
 Fichier JSON des produits
+
 Structure du fichier products.json
 Les produits sont stockés dans un fichier JSON local au projet, ce qui permet de simuler une API sans avoir besoin d'une base de données. Voici un exemple du contenu de ce fichier :
 
@@ -107,7 +144,9 @@ Copier le code
     "image": "https://www.ecoshop.com/images/panier-osier.jpg"
   }
 ]
+
 Chargement des produits dans l'application
+
 Les produits sont récupérés et affichés dans l'application via une fonction JavaScript. Voici un exemple de code qui charge les produits à partir du fichier JSON et les affiche :
 
 productService.js (dans src/services)
@@ -118,7 +157,9 @@ import productsData from '../products.json';
 export const getProducts = () => {
   return productsData;
 };
+
 Utilisation des produits dans un composant React (exemple dans ProductList.js)
+
 javascript
 Copier le code
 import React from 'react';
@@ -143,7 +184,9 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
 Fonctionnalité de recherche
+
 La barre de recherche permet de filtrer les produits en fonction de leur nom ou description. Voici un exemple de la mise en place de cette fonctionnalité :
 
 SearchBar.js
@@ -184,10 +227,14 @@ export default SearchBar;
 Contributions
 Nous encourageons la communauté à contribuer au projet pour améliorer ses fonctionnalités. Si vous souhaitez ajouter une nouvelle fonctionnalité ou corriger un bogue, suivez les étapes ci-dessous :
 
+
 Fork le projet depuis GitHub.
+
 Créez une nouvelle branche pour votre fonctionnalité ou correction (git checkout -b feature/nom-de-la-feature).
+
 Effectuez vos modifications et commitez-les (git commit -am 'Ajout d'une fonctionnalité').
+
 Poussez vos modifications sur votre fork (git push origin feature/nom-de-la-feature).
+
 Créez une pull request pour proposer vos changements.
-License
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
