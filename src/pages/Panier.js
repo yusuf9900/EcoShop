@@ -4,7 +4,10 @@ import './Panier.css';
 import Footer from '../components/Footer';
 
 function Panier({ panier, retirerDuPanier, validerCommande }) {
-  const total = useMemo(() => panier.reduce((acc, produit) => acc + produit.price, 0), [panier]);
+  // Calculer le total avec useMemo
+  const total = useMemo(() => {
+    return panier.reduce((acc, produit) => acc + produit.price * produit.quantity, 0);
+  }, [panier]);
 
   const handleValidation = () => {
     if (panier.length === 0) {
@@ -38,36 +41,20 @@ function Panier({ panier, retirerDuPanier, validerCommande }) {
             <section>
               <div className='panier-items'>
                 {panier.map((produit) => (
-                  <article key={produit.id} className='panier-item' tabIndex="0" aria-labelledby={`panier-item-${produit.id}`}>
-                    <img 
-                      src={produit.image} 
-                      alt={produit.name} 
-                      className="panier-item-image" 
-                      aria-hidden="true" // L'image est décorative
-                    />
+                  <article key={produit.id} className='panier-item'>
+                    <img src={produit.image} alt={produit.name} className="panier-item-image" />
                     <div className='item-details'>
-                      <h3 id={`panier-item-${produit.id}`}>{produit.name}</h3>
-                      <p className='item-price'>{produit.price}€</p>
-                      <button 
-                        onClick={() => retirerDuPanier(produit.id)} 
-                        aria-label={`Retirer ${produit.name} du panier`}
-                        style={{ backgroundColor: '#FF6347', color: 'white' }} // Contraste amélioré
-                      >
-                        Retirer
-                      </button>
+                      <h3>{produit.name}</h3>
+                      <p className='item-price'>{produit.price}€ x {produit.quantity}</p>
+                      <button onClick={() => retirerDuPanier(produit.id)}>Retirer</button>
                     </div>
                   </article>
                 ))}
               </div>
               <section className='panier-total'>
-                <h2>Total: {total}€</h2>
+                <h2>Total: {total}€</h2> {/* Afficher le total */}
               </section>
-              <button 
-                onClick={handleValidation} 
-                className='btn-valider'
-                aria-label="Valider la commande"
-                style={{ backgroundColor: '#4CAF50', color: 'white' }} // Contraste amélioré
-              >
+              <button onClick={handleValidation} className='btn-valider'>
                 Valider la commande
               </button>
             </section>

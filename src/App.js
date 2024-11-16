@@ -13,17 +13,34 @@ function App() {
   const [panier, setPanier] = useState([]);
 
   const ajouterAuPanier = (produit) => {
-    if (produit && produit.id) {
-      setPanier((prevPanier) => [...prevPanier, produit]);
-    } else {
-      console.error("Produit invalide :", produit);
-    }
+    setPanier((prevPanier) => {
+      // Vérifier si le produit existe déjà dans le panier
+      const produitExistant = prevPanier.find((p) => p.id === produit.id);
+  
+      if (produitExistant) {
+        // Si le produit existe, augmenter sa quantité
+        return prevPanier.map((p) =>
+          p.id === produit.id ? { ...p, quantity: p.quantity + 1 } : p
+        );
+      } else {
+        // Sinon, ajouter le produit avec une quantité de 1
+        return [...prevPanier, { ...produit, quantity: 1 }];
+      }
+    });
   };
+  
 
   const retirerDuPanier = (id) => {
-    setPanier((prevPanier) => prevPanier.filter((produit) => produit.id !== id));
+    setPanier((prevPanier) => {
+      return prevPanier
+        .map((p) =>
+          p.id === id ? { ...p, quantity: p.quantity - 1 } : p
+        )
+        .filter((p) => p.quantity > 0); // Supprimer les produits avec une quantité de 0
+    });
   };
-
+  
+  
   const validerCommande = (panier) => {
     console.log("Commande validée :", panier);
     setPanier([]); // Réinitialisation du panier après validation

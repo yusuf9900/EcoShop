@@ -106,4 +106,7 @@
     .map {
         margin-top: 40px; /* Ajouter un plus grand espacement au-dessus de la carte */
     }
+    h2{
+        font-size: 18px;
+    }
 }
