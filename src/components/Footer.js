@@ -23,10 +23,12 @@ const Footer = () => {
 
       {/* Section "Abonnez-vous à notre newsletter" */}
       <div className="footer-section">
-        <h3>Abonnez-vous à notre newsletter</h3>
-        <p>Recevez les dernières nouvelles et offres spéciales directement dans votre boîte de réception.</p>
-        <input type="email" placeholder="Votre email" /> {/* Champ de saisie pour l'email */}
-        <button>Abonnez-vous</button> {/* Bouton pour envoyer l'email */}
+        <div className='abon'>
+          <h3>Abonnez-vous à notre newsletter</h3>
+          <p>Recevez les dernières nouvelles et offres spéciales directement dans votre boîte de réception.</p>
+          <input type="email" placeholder="Votre email" /> {/* Champ de saisie pour l'email */}
+          <button>Abonnez-vous</button> {/* Bouton pour envoyer l'email */}
+        </div>
       </div>
 
       {/* Section "Suivez-nous" avec les icônes des réseaux sociaux */}

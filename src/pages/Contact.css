@@ -110,3 +110,27 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 320px) {
+    /* Ajustement du titre sur les petits écrans */
+    .contact-page h2 {
+        position: relative; /* Position relative pour ajuster le placement */
+        padding: 5px 0px; /* Réduire le padding pour un affichage plus compact */
+        top: 30px; /* Déplacer le titre un peu plus bas */
+        font-size: 11px;
+    }
+
+    /* Ajustement du formulaire sur les petits écrans */
+    .contact-page form {
+        margin-top: 40px; /* Ajouter de l'espace au-dessus du formulaire */
+    }
+
+    /* Ajustement de la carte (map) sur les petits écrans */
+    .map {
+        margin-top: 40px; /* Ajouter un plus grand espacement au-dessus de la carte */
+        width: 300px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}

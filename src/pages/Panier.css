@@ -87,3 +87,24 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 320px){
+    .panier-container h1{
+        position: relative;
+        top: 15px;
+        right: 30px;
+        margin-top: 80px;
+        padding: 0px 0px;
+        font-size: 0.8rem;
+    }
+    .panier-container p{
+        font-size: 11px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1920px){
+    .contaner{
+        max-width: 1920px;
+    }
+}
