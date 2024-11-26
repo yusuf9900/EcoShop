@@ -629,15 +629,8 @@ height: 200px;
   .container{
     max-width: 1920px;
   }
-  .title-1{
-    position: relative;
-    left: 50px;
-    margin-right: 50px;
-  }
   .product-card img{
     width: 200px;
-    position: relative;
-    left: 180px;
     }
     .products .product-card {
     height: 300px;
