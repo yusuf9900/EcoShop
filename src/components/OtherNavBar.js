@@ -5,16 +5,16 @@ function NavBar({ nombreProduits }) {  // Prop 'nombreProduits' passée pour aff
 
   return (
     // Conteneur principal de la barre de navigation
-    <div className='conter'>  {/* Attention : il semble y avoir une faute de frappe ici, 'conter' pourrait être 'container' */}
-      <div className="contaner">  {/* Attention : 'contaner' devrait être 'container' */}
+    <div className='conter'>  
+      <div className="contaner">  
         {/* Section du logo */}
-        <div className="logoo">  {/* Faute de frappe, 'logoo' pourrait être 'logo' */}
+        <div className="logoo">  
           <a href="/"><img src="/assets/images/e.png" alt="Logo EcoShop" /></a>  {/* Lien vers la page d'accueil avec l'image du logo */}
         </div>
 
         {/* Section de navigation principale */}
         <nav>
-          <div className="main-navi">  {/* Faute de frappe, 'main-navi' pourrait être 'main-nav' */}
+          <div className="main-navi">  
             <ul>
               {/* Liens de navigation */}
               <li><Link to="/">Home</Link></li>
