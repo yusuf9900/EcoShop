@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar({ nombreProduits }) {  // La prop 'nombreProduits' est reçue pour afficher le nombre de produits dans le panier
   const [scrolled, setScrolled] = useState(false);  // État pour gérer le défilement de la page
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   // Fonction de gestion du défilement pour ajouter ou enlever la classe 'scrolled'
   const handleScroll = () => {
@@ -18,10 +20,20 @@ function NavBar({ nombreProduits }) {  // La prop 'nombreProduits' est reçue po
     };
   }, []);  // Le tableau vide indique que l'effet ne se déclenche qu'une seule fois (au montage)
 
+  const handleSearch = (event) => {
+    event.preventDefault();
+    if (searchQuery.trim()) {
+      // Rediriger vers la page des produits avec le paramètre de recherche
+      navigate(`/product?search=${encodeURIComponent(searchQuery.trim())}`);
+      // Réinitialiser la barre de recherche
+      setSearchQuery('');
+    }
+  };
+
   return (
     <div className={`container ${scrolled ? 'scrolled' : ''}`}>  {/* Applique la classe 'scrolled' si l'utilisateur a défilé */}
       <div className="logo">
-        <a href="/"><img src="/assets/images/e.png" alt="Logo EcoShop" /></a>  {/* Lien vers la page d'accueil avec le logo */}
+        <Link to="/"><img src="/assets/images/e.png" alt="Logo EcoShop" /></Link>  {/* Lien vers la page d'accueil avec le logo */}
       </div>
       <nav>
         <div className="main-nav">
@@ -36,11 +48,21 @@ function NavBar({ nombreProduits }) {  // La prop 'nombreProduits' est reçue po
       </nav>
       <div className="search-bar">
         {/* Barre de recherche pour trouver des produits */}
-        <input 
-          type="text" 
-          placeholder="Recherchez un produit..." 
-        />
-        <button>Rechercher</button>
+        <form onSubmit={handleSearch} className="search-form">
+          <input 
+            type="text" 
+            placeholder="Recherchez un produit..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="search-input"
+          />
+          <button type="submit" className="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
       </div>
       <div className="cart">
         {/* Lien vers la page du panier avec un indicateur du nombre de produits */}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { useSearchParams } from 'react-router-dom';
 import './Product.css';
 import Footer from '../components/Footer';
 import Categories from '../components/Categories';
@@ -9,6 +10,12 @@ function Product({ ajouterAuPanier }) {
   const [hoveredProductId, setHoveredProductId] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    setSearchQuery(searchParams.get('search') || '');
+  }, [searchParams]);
 
   useEffect(() => {
     fetch('/assets/data/products.json')
@@ -33,6 +40,21 @@ function Product({ ajouterAuPanier }) {
   const handleCategorySelect = (categoryName) => {
     setSelectedCategory(categoryName);
   };
+
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredProducts = productsData
+    .filter(category => selectedCategory ? category.name === selectedCategory : true)
+    .map(category => ({
+      ...category,
+      products: category.products.filter(product =>
+        product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.description.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    }))
+    .filter(category => category.products.length > 0);
 
   return (
     <div>
@@ -66,9 +88,12 @@ function Product({ ajouterAuPanier }) {
 
         {/* Product Display Section */}
         <section className='product-page'>
-          {productsData
-            .filter(category => selectedCategory ? category.name === selectedCategory : true)
-            .map(category => (
+          {filteredProducts.length === 0 ? (
+            <div className="no-results">
+              <p>Aucun produit trouvé pour votre recherche.</p>
+            </div>
+          ) : (
+            filteredProducts.map(category => (
               <section key={category.name}>
                 <h2>{category.name}</h2>
                 <div className="products">
@@ -78,14 +103,14 @@ function Product({ ajouterAuPanier }) {
                       className="product-card"
                       onMouseEnter={() => handleMouseEnter(product.id)}
                       onMouseLeave={handleMouseLeave}
-                      tabIndex="0" // Permet la navigation au clavier
-                      aria-labelledby={`product-title-${product.id}`} // Lien entre l'image et le titre
+                      tabIndex="0"
+                      aria-labelledby={`product-title-${product.id}`}
                     >
                       <img 
                         src={product.image} 
                         alt={product.name} 
                         className="product-image" 
-                        aria-hidden="true" // L'image est décorative
+                        aria-hidden="true"
                       />
                       <h3 id={`product-title-${product.id}`}>{product.name}</h3>
                       {hoveredProductId === product.id && (
@@ -96,7 +121,7 @@ function Product({ ajouterAuPanier }) {
                             className="add-to-cart" 
                             onClick={() => ajouterAuPanier(product)}
                             aria-label={`Ajouter ${product.name} au panier`}
-                            style={{ backgroundColor: '#4CAF50', color: 'white' }} // Contraste
+                            style={{ backgroundColor: '#4CAF50', color: 'white' }}
                           >
                             Ajouter au panier
                           </button>
@@ -106,7 +131,8 @@ function Product({ ajouterAuPanier }) {
                   ))}
                 </div>
               </section>
-            ))}
+            ))
+          )}
         </section>
       </main>
 

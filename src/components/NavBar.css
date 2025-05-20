@@ -1,0 +1,261 @@
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--text-light);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  transition: var(--transition);
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  margin: 0 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  width: 250px;
+  padding: 10px 20px;
+  padding-right: 45px;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  width: 300px;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #4CAF50;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  color: #45a049;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Cart */
+.cart {
+  position: relative;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: var(--transition);
+}
+
+.cart-link:hover {
+  color: var(--primary-color);
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  transition: var(--transition);
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #F28123;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-menu-button span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-dark);
+  margin: 5px 0;
+  transition: var(--transition);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .search-input {
+    width: 200px;
+  }
+  
+  .search-input:focus {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--text-light);
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: var(--shadow);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .search-bar {
+    margin: 0 10px;
+  }
+  
+  .search-input {
+    width: 180px;
+  }
+  
+  .search-input:focus {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 10px 15px;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .search-bar {
+    margin: 0 5px;
+  }
+  
+  .search-input {
+    width: 150px;
+    padding: 8px 15px;
+    padding-right: 35px;
+  }
+  
+  .search-input:focus {
+    width: 180px;
+  }
+  
+  .cart-icon {
+    width: 20px;
+    height: 20px;
+  }
+} 
