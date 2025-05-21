@@ -41,10 +41,6 @@ function Product({ ajouterAuPanier }) {
     setSelectedCategory(categoryName);
   };
 
-  const handleSearch = (event) => {
-    setSearchQuery(event.target.value);
-  };
-
   const filteredProducts = productsData
     .filter(category => selectedCategory ? category.name === selectedCategory : true)
     .map(category => ({
